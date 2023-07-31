@@ -16,6 +16,26 @@ b.User defined variables -
 
 USER_NAME=Niranjan Janginmath
 COURSE=Bash Scripting
+DATE_OF_TODAY=`date`
+VAR1=200
+VAR2=100
+ADD=$ ((VAR1+VAR2))
+SUB=$ ((VAR1-VAR2))
+
+
 
 # TASK  4:  Using variables
+echo
+echo "My system username is $USER_NAME, we will learn $COURSE concepts variable and wildcards on $DATE_OF_TODAY session"
+echo
+echo -e "Addition(VAR1+VAR2)=$ADD\nSubtraction(VAR1-VAR2)=$SUB"
+echo
+
+
+
+
+
+
+
+
 
