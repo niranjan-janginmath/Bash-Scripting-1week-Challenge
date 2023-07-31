@@ -1,4 +1,4 @@
-#!/bin/bash
+ #!/bin/bash
 
 #The first line of the script is called SHEBANG
 #SHEBANG line tells us the following script should be execute using bash interpreter
@@ -34,20 +34,51 @@ echo
 
 
 # TASK  5:   Using Built-in Variables
+echo "My username of the system - $USER"
 echo "My current bash path - $BASH"
 echo "Bash version I am using - $BASH_VERSION"
 echo "PID of bash I am running - $$"
-echo "My home directory - $HOME"
-echo "Where am I currently? - $PWD"
-echo "My hostname - $HOSTNAME"
+echo "User's home directory - $HOME"
+echo "Display Current working directory - $PWD"
+echo "Display the hostname of system - $HOSTNAME"
+echo "Display path - $PATH"
 
 
 
 # Task  6: Wildcards
+#  *         all character
+#  ?         only one character
+#  -         range of character
+#  ~         users home directory
+#  []        set of character
+#  n*        only filenames beginning with "n"
+#  *n        only filenames ending with "n"
+#  *n*       only filenames containing a "n"
+#  [!n]*     only filenames where first character is not "n"
+#  ???*      only filenames that contain a number 
+#  *[[:digit]]*  only filenames that contains a number
+
+
+
 echo "Files with .txt extension in the current directory:"
 ls *.txt
 
+echo "Display .log extension in /var directory"
+ls /var/log/*.log | more 
 
+cp *.txt	/opt 							#  to copy all .txt extension files to opt directory
+
+
+
+#  ^ symbol called as cap or hat denotes beginning of the line 
+#  $ symbol called as cap or hat denotes ending of the line
+
+echo "Display only the directories/folders in the current directory"
+ls -l | grep "^d" 
+
+
+#Make sure to provide execution permission with the following command:
+#chmod +x day1_script.sh
 
 
 
