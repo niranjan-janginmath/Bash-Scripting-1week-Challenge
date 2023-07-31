@@ -14,8 +14,8 @@ echo "Welcome you all to the BashBlaze-7-Days-of-Bash-Scripting-Challenge"
 a.System Variables - 
 b.User defined variables - 
 
-USER_NAME=Niranjan Janginmath
-COURSE=Bash Scripting
+USER_NAME="Niranjan Janginmath"
+COURSE="Bash Scripting"
 DATE_OF_TODAY=`date`
 VAR1=200
 VAR2=100
@@ -75,6 +75,32 @@ cp *.txt	/opt 							#  to copy all .txt extension files to opt directory
 
 echo "Display only the directories/folders in the current directory"
 ls -l | grep "^d" 
+
+
+
+#Using backslash "\" : nullify the speciality of only one character at a time 
+echo I need $5000 money  # you may get error 
+echo I need \$5000 money 
+
+
+#Using Single quotes: all character treated as normal character
+echo Jenkins; Update [y/n]          # you may get error 
+echo 'Jenkins; Update [y/n]'        # special character are treated as normal character and display wholw sentence
+
+
+#Using Double quotes: all character treated as normal character except $ `(back tick) \ 
+#Use double quotes "" for variables and command substitution
+echo "Today is $(date)"
+USER_NAME="Niranjan Janginmath"
+COURSE="Bash Scripting"
+echo $USER_NAME
+echo $COURSE
+echo $1=77 rupees 
+echo "\$1= 77 rupees"
+
+
+
+
 
 
 #Make sure to provide execution permission with the following command:
