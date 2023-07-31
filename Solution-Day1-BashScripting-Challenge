@@ -1,1 +1,21 @@
+#!/bin/bash
+
+#The first line of the script is called SHEBANG
+#SHEBANG line tells us the following script should be execute using bash interpreter
+
+# TASK  2:  echo
+#echo command is used to print the text on display in linux
+echo "Welcome you all to the BashBlaze-7-Days-of-Bash-Scripting-Challenge"
+                                                              
+# TASK  3:  Variables
+# We declare a variable in bash as shown below
+# Variable_name=Value
+# There are 2 types of variables 
+a.System Variables - 
+b.User defined variables - 
+
+USER_NAME=Niranjan Janginmath
+COURSE=Bash Scripting
+
+# TASK  4:  Using variables
 
